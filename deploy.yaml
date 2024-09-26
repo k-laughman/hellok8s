@@ -26,8 +26,6 @@ steps:
       - deployment
       - hello-kubernetes
       - --ignore-not-found
-  - options:
-      logging: CLOUD_LOGGING_ONLY
     env:
       - CLOUDSDK_COMPUTE_ZONE=us-central1-f
       - CLOUDSDK_CONTAINER_CLUSTER=my-cluster
@@ -39,3 +37,5 @@ steps:
     env:
       - CLOUDSDK_COMPUTE_ZONE=us-central1-f
       - CLOUDSDK_CONTAINER_CLUSTER=my-cluster
+options:
+  logging: CLOUD_LOGGING_ONLY
